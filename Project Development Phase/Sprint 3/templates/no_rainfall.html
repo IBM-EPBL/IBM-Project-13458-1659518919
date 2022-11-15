@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>No Rainfall</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/result_styles.css') }}"/>
+     <!-- <link rel="stylesheet" href="../static/css/result_styles.css"/> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" ></script>
+</head>
+<body>
+    <!-- <p> Hurray!!! There won't be any rainfall tomorrow in {{location}}</p> -->
+    <section id="container">
+        <div class="title-container">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-cloud-sun-fill" viewBox="0 0 16 16">
+            <path d="M11.473 11a4.5 4.5 0 0 0-8.72-.99A3 3 0 0 0 3 16h8.5a2.5 2.5 0 0 0 0-5h-.027z"/>
+            <path d="M10.5 1.5a.5.5 0 0 0-1 0v1a.5.5 0 0 0 1 0v-1zm3.743 1.964a.5.5 0 1 0-.707-.707l-.708.707a.5.5 0 0 0 .708.708l.707-.708zm-7.779-.707a.5.5 0 0 0-.707.707l.707.708a.5.5 0 1 0 .708-.708l-.708-.707zm1.734 3.374a2 2 0 1 1 3.296 2.198c.199.281.372.582.516.898a3 3 0 1 0-4.84-3.225c.352.011.696.055 1.028.129zm4.484 4.074c.6.215 1.125.59 1.522 1.072a.5.5 0 0 0 .039-.742l-.707-.707a.5.5 0 0 0-.854.377zM14.5 6.5a.5.5 0 0 0 0 1h1a.5.5 0 0 0 0-1h-1z"/>
+            </svg><h4>  Hurray!! We won't have rain tomorrow in {{location}}</h4>
+        </div>
+        <div class="recommended-title-container">
+            <h4>Some Recommended Practice Are : </h4>
+        </div>
+        <div class="recommended-practices">
+            <ul class="list-container">
+                <li class="list-item"><p>Sandy soils can be problematic because of excessive drainage of water and nutrients as well as the presence of nematodes. This, in turn, can lead to the stress of the crops and effect in smaller yields. Summer is a good season for vegetable gardening</p></li>
+                <li class="list-item"><p>Veggies that like to grow under full sunshine enjoy long days and warm climate; thrive well in harsh Indian summer. The good thing about summer vegetable plants is that the same ones can be continued in monsoon season as well. Plant this in high spring, after the threat of frost is past. These tender vegetables require warm weather (65 to 90°F) to grow and are killed by frost.</p></li>
+                <li class="list-item"><p>Soil testing should be on your to-do list right from the get-go because your soil and it's required will directly influence the growth of vegetable crops. Examining the phosphorus, potassium, and fertilization levels will give you insight into how to handle vegetable crops. It will also let you know when proper soil conditions are forming, for example, the optimal density and right amount of nutrients, so you are prepared to start planting. The function of nutrients in vegetables is complex and includes processes like root, shoot, leaf and fruit development, production of proteins, hormones and chlorophyll, photosynthesis, etc. Soil is the major source of these nutrients to plants and soil fertility (or nutrient content) can, therefore, have a profound impact on crop production. The absence of any one of nutrients has the potential to decrease crop yield by negatively affecting the growth factor.</p></li>
+            </ul>
+        </div>
+        <div class="plants-recommended-container">
+            <div class="table-title-container">
+                <h4>Some recommended plants</h4>
+            </div>
+            <div class="table-container">
+                <table class="table">
+                    <thead>
+                        <th>S.no</th>
+                        <th>Recommended Plants</th>
+                        <th>Description</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1.</td>
+                            <th>Beans</th>
+                            <td><p>Beans create a healthy addition to summer salads and side dishes. Beans are simply grown from seeds and require between 40 and 60 days to maturity</p></td>
+                        </tr>
+                        <tr>
+                            <td>2.</td>
+                            <th>EggPlant and Tomatoes</th>
+                            <td><p>Eggplant is generally during the late spring. However, eggplant grows well when planted through June, as long as the neighborhood is not too foggy. The plants are best grown from seedlings rather than seeds</p></td>
+                        </tr>
+                        <tr>
+                            <td>3.</td>
+                            <th>Okra</th>
+                            <td><p>Okra plant loves hot weather, rich soil and full sun. It must be direct sown in the garden several weeks after the last spring frost. Seeds must be started indoors and moved out into the garden after the summer equinox in late June. Pick pods when they become 3 to 4 inches long and if they are allowed to over-mature, the plants will stop producing</p></td>
+                        </tr>
+                        <tr>
+                            <td>4.</td>
+                            <th>Carrots, Cucumber and Corn</th>
+                            <td><p>Grow carrots from seed throughout the summer; be careful when planting carrots in foggy neighborhoods during July. Carrots take about 120 to 150 days to reach maturity.</p></td>
+                        </tr>
+                        <tr>
+                            <td>5.</td>
+                            <th>Peppers, Pumpkins and Squashes</th>
+                            <td><p>Peppers add flavor to the summer vegetable garden. Most peppers are planted during the spring, planting can continue up through the June to ensure fresh peppers all summer long. Start summer squashes in the garden as early as May, but also planted throughout June and July. Obtain a jump-start on the fall by planting pumpkins and squashes in June</p></td>
+                        </tr>
+                        <tr>
+                            <td>6.</td>
+                            <th>Sweet Potatoes</th>
+                            <td><p>Sweet potatoes differ from regular potatoes in that they like warm weather. These plants are cold-sensitive and do best when planted about a month after the last frost date</p></td>
+                        </tr>
+                        <tr>
+                            <td>7.</td>
+                            <th>Summer Squash and Zucchini</th>
+                            <td><p>Squash does not transplant well so it is best to direct sow it in the garden after the last frost date or choose plants in biodegradable peat pots that can be planted along with the squash. Summer squash requires nutrient-rich, well-drained soil.</p></td>
+                        </tr>
+                        <tr>
+                            <td>8.</td>
+                            <th>Chilli</th>
+                            <td><p>Chilli as a spice is popular in India. The most pungent varieties of chilies  can be grown in the hot summer season. The non-pungent type varieties are delicate and susceptible to diseases. The seedlings are transplanted. Heat is key for growing chilies and requires a hot, sun-drenched space, preferably up against a heat-reflecting wall that helps to collect extra rays of warmth. Those in cooler climates often make the best chilies in hoop houses or any other insulated environment. Though, do not let its infatuation with heat throw the basic demands of the plant. Even the toughest dudes require food and water to survive and the chili is no exception. Chilli is known to be an aphrodisiac but arrives there you have to be persistent.</p></td>
+                        </tr>
+                        <tr>
+                            <td>9.</td>
+                            <th>Capsicum</th>
+                            <td><p>Capsicum is a crop that is best planted once the soil temperature has balanced out at a balmy 20 °C and above. Much like its cousins, it is a heat-loving variety that will choose a sunny place in the patch with a little airflow to help avoid any fungal disease.</p></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
