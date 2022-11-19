@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>No Rainfall</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/result_styles.css') }}"/>
+     <!-- <link rel="stylesheet" href="../static/css/result_styles.css"/> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" ></script>
+</head>
+<body>
+    <!-- <p> Hurray!!! There won't be any rainfall tomorrow in {{location}}</p> -->
+    <section id="container">
+        <div class="title-container">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-cloud-lightning-rain-fill" viewBox="0 0 16 16">
+            <path d="M2.658 11.026a.5.5 0 0 1 .316.632l-.5 1.5a.5.5 0 1 1-.948-.316l.5-1.5a.5.5 0 0 1 .632-.316zm9.5 0a.5.5 0 0 1 .316.632l-.5 1.5a.5.5 0 0 1-.948-.316l.5-1.5a.5.5 0 0 1 .632-.316zm-7.5 1.5a.5.5 0 0 1 .316.632l-.5 1.5a.5.5 0 1 1-.948-.316l.5-1.5a.5.5 0 0 1 .632-.316zm9.5 0a.5.5 0 0 1 .316.632l-.5 1.5a.5.5 0 0 1-.948-.316l.5-1.5a.5.5 0 0 1 .632-.316zm-7.105-1.25A.5.5 0 0 1 7.5 11h1a.5.5 0 0 1 .474.658l-.28.842H9.5a.5.5 0 0 1 .39.812l-2 2.5a.5.5 0 0 1-.875-.433L7.36 14H6.5a.5.5 0 0 1-.447-.724l1-2zm6.352-7.249a5.001 5.001 0 0 0-9.499-1.004A3.5 3.5 0 1 0 3.5 10H13a3 3 0 0 0 .405-5.973z"/>
+            </svg> 
+             <h4>Oops!! We could have a rainfall tomorrow in {{location}}</h4>
+        </div>
+        <div class="recommended-title-container">
+            <h4>Some Recommended Practice Are : </h4>
+        </div>
+        <div class="recommended-practices">
+            <ul class="list-container">
+                <li class="list-item"><p>Make the roof of livestock sheds leak-proof and clean.Livestock owners must cut some of the young grass of rainy season and before feeding, dry it up in sunshine. It will reduce water in grass and it will turn into a good feed.</p></li>
+                <li class="list-item"><p>Deworming must be done in the beginning of the rainy season and throughout the season because worms multiply at a greater rate during this period.Farmers should spray their animals regularly for removal of ectoparasites and cut all bushes near their sheds.</p></li>
+                <li class="list-item"><p>Farm should be disinfected using a disinfectant regularly.It must be made sure that feeds are stored in a dry place.</p></li>
+                <li class="list-item"><p>Make sure to install a fence around any open water sources on the farm to prevent people from tripping over them during the wet season. During the rainy season, it would be difficult for you and your employees to locate lakes or wells, and muddy banks could result in someone slipping or, worst yet, drowning. You could preserve not just yourself but also small farm animals by erecting barriers around open water regions.</p></li>
+                <li class="list-item"><p>Keep your crops out of the rain, especially those that are ready for harvest, as letting them sit on soggy soil might have unfavorable impacts. Produce from the farm may have moisture that encourages microbial growth, which results in fungus and mould. The consumption of these tainted goods can be harmful to both human and animal health.</p></li>
+            </ul>
+        </div>
+        <div class="plants-recommended-container">
+            <div class="table-title-container">
+                <h4>Some recommended plants</h4>
+            </div>
+            <div class="table-container">
+                <table class="table">
+                    <thead>
+                        <th>S.no</th>
+                        <th>Recommended Plants</th>
+                        <th>Description</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1.</td>
+                            <th>Rice</th>
+                            <td><p>India is one of the biggest producers of white and brown rice in the world. It supplies more than half of the Indian population and up to one-third of India’s total cultivated land. Although it is grown in most Indian states, West Bengal, Punjab, and Uttar Pradesh are the top three states for rice production. Since India produces the most rice, it is recommended to grow rice during the monsoon season. It needs an average temperature of 25 to 26 degrees Celsius and at least 100 centimeters of precipitation. Of all the cities, only Punjab and Haryana produce expensive rice for export.</p></td>
+                        </tr>
+                        <tr>
+                            <td>2.</td>
+                            <th>Cotton</th>
+                            <td><p>India also referred to as “White Gold,” ranks third in the world for cotton production. Cotton, a tropical and subtropical crop is another Kharif crop. Cotton is regarded as a crop for making fiber. Oil from its seed is used in cooking. Long, medium and short-staple varieties of Kharif crops include cotton. Cotton needs between 21 and 30 degrees Celsius and at least 50 to 100 cm of rain each year to flourish. Gujarat, Maharashtra, Andhra Pradesh, Haryana, Rajasthan, Karnataka, Tamil Nadu, and Orissa are the states that produce the most cotton overall. Gujarat has the highest rating overall, according to the prior study. About 75% of the rainfall needed for cotton cultivation is delivered during the monsoon.</p></td>
+                        </tr>
+                        <tr>
+                            <td>3.</td>
+                            <th>Sugarcane</th>
+                            <td><p>An ancient crop, sugarcane is grown in tropical and subtropical regions. Sugarcane is used to make over 79 percent of all sugar. Falernum, molasses, rum, ethanol, and other products generated from sugarcane are among the few others. Only during the monsoon season is sugarcane grown. It also needs agroclimatic zones with hot, humid weather. The regions for developing sugarcane are the North Western, North Central, North Eastern, Peninsular Zone, and coastal zones. The ideal temperature for stem cuttings is between 32 and 38 degrees Celsius, whereas 14 to 16 degrees Celsius are required for ripening. </p></td>
+                        </tr>
+                        <tr>
+                            <td>4.</td>
+                            <th>Tea</th>
+                            <td><p>The nature of a tea plantation is quite dynamic, and it can withstand both heavy snowfall and frost. As a result, it may typically grow in a variety of conditions across the nation, from subtropical to tropical.</p></td>
+                        </tr>
+                        <tr>
+                            <td>5.</td>
+                            <th>Pulses</th>
+                            <td><p>The sowing of Kharif crops is slowed down by late monsoons, and production may be damaged and delayed as a result. India receives 70% of its rainfall from the monsoon, which is also essential to the country’s agriculture production and economy.</p></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
