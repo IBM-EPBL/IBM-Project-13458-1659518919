@@ -1,0 +1,123 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+.navbar-container{
+    background-color: brown;
+    padding:1rem;
+}
+.navbar-list{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navbar-link-item{
+    margin-right:20px;
+}
+.navbar-link-item > a{
+    color:whitesmoke;
+    cursor: pointer;
+}
+
+.title-container{
+    background-color: brown;
+    color:white;
+    padding:0.5rem;
+    width:100vw;
+    text-align: center;
+}
+
+/* ABOUT CONTAINER STYLES */
+#About{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:1rem;
+    justify-content: center;
+}
+
+.about-container{
+    padding:1rem;
+}
+
+/* FORM-CONTAINER STYLES */
+
+#prediction{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.form-container{
+    border:0.5px solid #DBE2E9;
+    padding:1rem;
+    border-radius: 5px;
+    width:80%;
+    margin:20px;
+}
+
+.form-container > form{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    width:100%;
+}
+select{
+    padding:1rem;
+    width:100%;
+    border:1px solid #DBE2E9;
+    outline:none;
+    border-radius: 5px;
+}
+
+option{
+    padding:1rem;
+}
+input[type="submit"]{
+    padding:0.5rem;
+    background-color: transparent;
+    color:brown;
+    border-radius: 5px;
+    margin:20px;
+    width:20%;
+    border:1px solid brown;
+}
+input[type="submit"]:hover{
+    background-color: brown;
+    color:white;
+}
+
+/* FOOTER STYLES */
+#footer{
+    padding:1rem;
+    background-color: brown;
+    color:white;
+    position: fixed;
+    bottom: 0;
+    width:100%;
+}
+.footer-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.footer-container > ul{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.social-link-item{
+    margin-right:20px;
+}
+.footer-link-item{
+    margin-right:10px;
+}
